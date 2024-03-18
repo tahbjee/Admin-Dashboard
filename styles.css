@@ -34,12 +34,23 @@ body {
   flex-direction: column;
   align-items: start;
   padding-left: 3rem;
-  row-gap: 2.4rem;
+  row-gap: 3rem;
   grid-row: 1 / 7;
   grid-column: 1 / 2;
   background-color: rgb(23, 107, 243);
   color: #fff;
   font-size: 2rem;
+}
+.sidebar a {
+  text-decoration: none;
+}
+
+p:link {
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
 }
 
 .grid-1 {
@@ -179,6 +190,8 @@ span {
   border: none;
   border-radius: 50px 50px 50px 50px;
   background-color: rgb(65, 121, 243);
+  font-size: large;
+  color: #fff;
 }
 
 .header2-column2 > button > p {
@@ -189,7 +202,7 @@ span {
 
 .container {
   display: grid;
-  background-color: gray;
+  background-color: rgb(217, 215, 215);
   overflow: scroll;
   grid-template-columns: 34rem 34rem 24rem;
   grid-template-rows: 7rem 7rem 7rem 7rem 7rem 7rem;
@@ -206,7 +219,8 @@ span {
   background: linear-gradient(to left, rgb(255, 255, 255) 95%, transparent 50%),
     linear-gradient(to left, transparent 50%, rgb(240, 216, 0) 5%);
   background-repeat: no-repeat;
-  padding-left: 2rem;
+  padding-left: 3rem;
+  box-shadow: -1px 5px rgba(143, 145, 143, 0.677);
 }
 .container-imgs {
   display: flex;
@@ -236,6 +250,30 @@ span {
 }
 .container-7 p:nth-child(even) {
   font-size: 0.9rem;
+}
+
+.container-8 {
+  display: grid;
+  line-height: 1.7rem;
+}
+
+.container-8 img {
+  padding: 2rem 1rem 0rem 0rem;
+}
+.child-1 {
+  display: flex;
+}
+
+.child-2 {
+  display: flex;
+}
+
+.child-3 {
+  display: flex;
+}
+
+.child-4 {
+  display: flex;
 }
 
 .container-div img {
@@ -282,4 +320,43 @@ span {
 .container-8 {
   grid-row: 4 / 7;
   grid-column: 3 / 4;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 30%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  font-size: x-large;
+  padding: 2rem;
+}
+
+.close-modal {
+  top: 1px;
+  right: 2rem;
+  position: absolute;
+  border: none;
+  font-size: 3rem;
+  background: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 5;
 }
