@@ -34,7 +34,7 @@ body {
   flex-direction: column;
   align-items: start;
   padding-left: 3rem;
-  row-gap: 3rem;
+  row-gap: 2rem;
   grid-row: 1 / 7;
   grid-column: 1 / 2;
   background-color: rgb(23, 107, 243);
@@ -107,21 +107,19 @@ p:nth-child(2) {
   grid-row: 1 / 2;
 }
 
-.img-header {
-  height: 20px;
-  width: 20px;
+.header-column1 img {
+  position: relative;
+  top: 1rem;
+  height: 40px;
+  width: 40px;
 }
 .header-column1 {
-  display: grid;
-  align-items: center;
-  padding-right: 2rem;
   position: relative;
   z-index: 1;
 }
 
 form input {
   padding: 0.5rem;
-  margin-left: 1rem;
   border: none;
   background-color: rgb(220, 217, 217);
   border-radius: 50px 50px 50px 50px;
@@ -144,7 +142,6 @@ form input {
 }
 
 .header-column2 p {
-  font-weight: bold;
   font-size: larger;
 }
 
@@ -161,8 +158,9 @@ form input {
   font-size: larger;
   padding-left: 8rem;
 }
-span {
-  font-size: x-large;
+.boldText {
+  font-weight: bold;
+  font-size: larger;
 }
 
 .header2-column1 p {
@@ -190,14 +188,21 @@ span {
   border: none;
   border-radius: 50px 50px 50px 50px;
   background-color: rgb(65, 121, 243);
-  font-size: large;
-  color: #fff;
 }
 
-.header2-column2 > button > p {
+.header2-column2 button p {
   color: #fff;
   font-size: larger;
   font-weight: bold;
+}
+.header2-column1 img {
+  height: 70px;
+  width: 70px;
+}
+
+.header-column2 img {
+  height: 35px;
+  width: 35px;
 }
 
 .container {
@@ -259,7 +264,12 @@ span {
 
 .container-8 img {
   padding: 2rem 1rem 0rem 0rem;
+  background: none;
 }
+.lightText {
+  font-weight: 500;
+}
+
 .child-1 {
   display: flex;
 }
@@ -322,6 +332,7 @@ span {
   grid-column: 3 / 4;
 }
 
+/* modal */
 .hidden {
   display: none;
 }
@@ -332,21 +343,21 @@ span {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
-  height: 30%;
+  height: 20rem;
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
   font-size: x-large;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .close-modal {
-  top: 1px;
-  right: 2rem;
+  top: -4rem;
+  right: 1rem;
   position: absolute;
   border: none;
-  font-size: 3rem;
+  font-size: 4rem;
   background: none;
 }
 
